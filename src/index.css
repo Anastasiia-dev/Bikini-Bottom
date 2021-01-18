@@ -1,0 +1,54 @@
+@font-face{
+  font-family: "BlobSpongey";
+  src: local("BlobSpongey"), url(./fonts/BlobSpongey.woff) format("woff");
+}
+
+@font-face{
+  font-family: "Spongeboytt2-Regular";
+  src: local("Spongeboytt2-Regular"), url(./fonts/Spongeboytt2-Regular.woff) format("woff");
+}
+
+body{
+  background-image: linear-gradient(to top, #17406edc,#2886b1d7,#67deb8ce), url(./img/bg222.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spongeboytt2-Regular";
+  position: relative;
+  overflow: hidden;
+}
+
+.title,
+.subtitle{
+	  z-index: 2;
+    letter-spacing: 0.2rem; 
+}
+
+.title{
+    font-size: 5.5rem;
+    color: #f5f23c;
+    text-shadow:  #0f467ac7 9px 7px 10px;
+    margin-top: 20%;
+    position: absolute;
+    top: -10%;
+    margin-left: 18%;
+  }
+    
+.subtitle{
+  color:#F1F2D2;
+  font-size: 22px;
+  font-family:'BlobSpongey';
+  text-shadow:  #0f467ac7 3px 7px 7px;
+  position: absolute;
+  bottom: 25%;
+  margin-left: 19%;
+}
+
+
+
+

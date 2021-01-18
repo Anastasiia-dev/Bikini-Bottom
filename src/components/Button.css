@@ -1,0 +1,33 @@
+
+.btn-learn-more,
+.btn-youtube{
+    position: absolute;
+    bottom: 15%;
+    letter-spacing: 0.2rem;
+    font-family: 'BlobSpongey';
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid yellow;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: inset 0 0 5px rgb(255, 255, 0);
+    color: yellow;
+  }
+
+  .btn-learn-more{
+    margin-left: 19%;
+  }
+
+  .btn-youtube{
+      margin-left: 37%;
+  }
+
+
+  .btn-learn-more:hover,
+  .btn-youtube:hover{
+    border: 2px solid white;
+    box-shadow: inset 0 0 5px white;
+    color: white;
+  }
