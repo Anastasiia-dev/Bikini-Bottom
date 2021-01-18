@@ -21,7 +21,6 @@ return(
     <MainTitle />
     <Button />
     <Bubbles />
-    
   </div>
 )
 
