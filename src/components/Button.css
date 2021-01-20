@@ -1,8 +1,15 @@
+.buttons-main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
 
 .btn-learn-more,
-.btn-youtube{
-    position: absolute;
-    bottom: 15%;
+.btn-youtube{ 
     letter-spacing: 0.2rem;
     font-family: 'BlobSpongey';
     width: 200px;
@@ -17,11 +24,7 @@
   }
 
   .btn-learn-more{
-    margin-left: 19%;
-  }
-
-  .btn-youtube{
-      margin-left: 37%;
+    margin-right: 2%;
   }
 
 
