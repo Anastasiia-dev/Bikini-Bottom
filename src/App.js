@@ -15,12 +15,15 @@ function App(){
 
 return(
   <div>
-
-    <SidebarIcon />
-    <Logo />
-    <MainTitle />
-    <Button />
-    <Bubbles />
+    <header className="navbar"> 
+      <SidebarIcon />
+      <Logo />
+    </header> 
+      <div className="container">
+        <MainTitle />
+        <Button />
+        </div>
+      <Bubbles />
   </div>
 )
 
