@@ -1,13 +1,9 @@
 .btn-menu{
-    padding: 0;
+    margin-left: 70px;
     color: yellow;
-    padding: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 50px;
-    left: 50px;
   }
 
   .btn-menu:hover{
