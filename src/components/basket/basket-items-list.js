@@ -8,7 +8,6 @@ export function BasketItemsList() {
   useEffect(() => {
     getBasketItems()
       .then(basketItems => {
-        console.log(basketItems);
         setBasketItems(basketItems);
       })
       .catch(err => console.err(err));
