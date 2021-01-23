@@ -9,7 +9,7 @@ function Bubbles(){
 
     return(
         <div className="bubbles">
-            {images.map(() => <img src={bubble} alt="bubble"/>)};
+            {images.map((item, index) => <img key={index} src={bubble} alt="bubble"/>)};
         </div>
     )
 }
