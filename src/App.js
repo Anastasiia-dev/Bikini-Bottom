@@ -1,5 +1,5 @@
 import React from "react";
-import MainTitle from "./components/MainTitle"; 
+import MainTitle from "./components/MainTitle";
 import Bubbles from "./components/Bubbles";
 import Button from "./components/Button";
 import { library } from '@fortawesome/fontawesome-svg-core';

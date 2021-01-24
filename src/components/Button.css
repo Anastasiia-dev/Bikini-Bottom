@@ -28,9 +28,9 @@
   }
 
 
-  .btn-learn-more:hover,
-  .btn-youtube:hover{
-    border: 2px solid white;
-    box-shadow: inset 0 0 5px white;
-    color: white;
-  }
+.btn-learn-more:hover,
+.btn-youtube:hover {
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px white;
+  color: white;
+}
