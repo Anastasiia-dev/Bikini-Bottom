@@ -3,28 +3,14 @@ import bubble from "../img/bubble.png";
 import "./Bubbles.css";
 
 function Bubbles() {
+  const images = new Array(12).fill(null);
+
   return (
     <div className="bubbles">
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
-      <img src={bubble} alt="bubble" />
+      {images.map((item, index) => (
+        <img key={index} src={bubble} alt="bubble" />
+      ))}
+      ;
     </div>
   );
 }
