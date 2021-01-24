@@ -1,4 +1,4 @@
-.buttons-main{
+.buttons-main {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -9,24 +9,23 @@
 }
 
 .btn-learn-more,
-.btn-youtube{ 
-    letter-spacing: 0.2rem;
-    font-family: 'BlobSpongey';
-    width: 200px;
-    height: 50px;
-    background-color: transparent;
-    border: 2px solid yellow;
-    border-radius: 30px;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: inset 0 0 5px rgb(255, 255, 0);
-    color: yellow;
-  }
+.btn-youtube {
+  letter-spacing: 0.2rem;
+  font-family: "BlobSpongey";
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid yellow;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: inset 0 0 5px rgb(255, 255, 0);
+  color: yellow;
+}
 
-  .btn-learn-more{
-    margin-right: 2%;
-  }
-
+.btn-learn-more {
+  margin-right: 2%;
+}
 
 .btn-learn-more:hover,
 .btn-youtube:hover {
