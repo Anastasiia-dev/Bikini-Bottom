@@ -6,6 +6,13 @@ import {BasketItemHotel} from './basket-item-hotel';
 import {BasketItemPackage} from './basket-item-package';
 import './basket-list-item.css';
 
+/**
+ * Этот компонент служит оберктой для всех разных элементов корзины.
+ * Он в себе содержит знание о том, как устроены элементы корзины, так, что родителю про это не надо знать.
+ * Ещё этот шаблон называют "Декоратор",
+ * тут можно подробнее почитать про декоратор https://refactoring.guru/ru/design-patterns/decorator
+ */
+
 export function BasketListItem(props) {
   const { basketItem } = props;
 
