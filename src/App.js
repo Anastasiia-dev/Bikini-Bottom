@@ -8,6 +8,8 @@ import {
   faShoppingBasket,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
+import { Home } from "./components/Pages/Home";
+import { Hotels } from "./components/Pages/Hotels";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -18,16 +20,20 @@ function App() {
     <div>
       <Router>
         <Sidebar />
-        <Switch>
-          <Route path="/" />
-        </Switch>
+        <Bubbles />
+        <div className="container">
+          <Switch>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path='/hotels'>
+              <Hotels/>
+            </Route>
+          </Switch>
+        </div>
       </Router>
-
-      <div className="container">
-        <MainTitle />
-        <Button />
-      </div>
-      <Bubbles />
     </div>
   );
 }
