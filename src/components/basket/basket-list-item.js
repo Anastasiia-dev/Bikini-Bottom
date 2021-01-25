@@ -4,6 +4,7 @@ import {BasketItemActivity} from './basket-item-activity';
 import {BasketItemDining} from './basket-item-dining';
 import {BasketItemHotel} from './basket-item-hotel';
 import {BasketItemPackage} from './basket-item-package';
+import './basket-list-item.css';
 
 export function BasketListItem(props) {
   const { basketItem } = props;
@@ -15,5 +16,9 @@ export function BasketListItem(props) {
     [basketItemTypes.package]: <BasketItemPackage packageItem={basketItem}/>
   };
 
-  return basketItemsHash[basketItem.type];
+  return (
+    <div className='basket-list-item-container'>
+      {basketItemsHash[basketItem.type]}
+    </div>
+  );
 }
