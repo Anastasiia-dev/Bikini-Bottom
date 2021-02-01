@@ -3,6 +3,8 @@ import "./SideBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
+import logo from "./img/logoBB.png";
+
 
 function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -12,19 +14,21 @@ function Sidebar() {
   return (
     <>
       <div className="sidebar-container">
-        <Link to="#" className="icon-open">
+        <Link to="#">
           <FontAwesomeIcon
             onClick={showSidebar}
             icon="bars"
             size="2x"
             color="yellow"
+            className="icon-open"
           />
         </Link>
+        <img className="logo" src={logo} alt="logo" width="100px" />
         <nav className={sidebar ? "menu active" : "menu"}>
           <ul className="sidebar-items" onClick={showSidebar}>
             <li className="sidebar-toggle">
               <Link to="#" className="sidebar-icon">
-                <FontAwesomeIcon icon="times" size="2x" color="yellow" />
+                <FontAwesomeIcon icon="times" size="2x" />
               </Link>
             </li>
             {SidebarData.map((item, index) => {

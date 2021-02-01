@@ -1,5 +1,5 @@
 import React from "react";
-import bubble from "../img/bubble.png";
+import bubble from "./img/bubble.png";
 import "./Bubbles.css";
 
 function Bubbles() {

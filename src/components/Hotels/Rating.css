@@ -1,0 +1,21 @@
+
+.star-rating{
+    cursor: pointer;
+}
+
+label{
+    margin-left: 7px;
+}
+.stars{
+    transition: color 400ms;
+    cursor: pointer;
+    
+}
+
+.stars:hover{
+    transform: scale(1.3);
+}
+
+input{
+    display: none;
+}
