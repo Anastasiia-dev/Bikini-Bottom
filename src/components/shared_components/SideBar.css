@@ -3,8 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 90px 0 90px;
-  
+  margin: 20px 90px 0 90px;
 }
 
 .sidebar-icon {
@@ -47,7 +46,7 @@
 
 .sidebar-text {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 5px 0px 8px 16px;
   list-style: none;
@@ -58,10 +57,11 @@
   text-decoration: none;
   color: yellow;
   font-size: 24px;
-  width: 90%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 

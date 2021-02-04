@@ -5,25 +5,35 @@ import {
   faBars,
   faShoppingBasket,
   faTimes,
-  faStar
+  faStar,
+  faWifi,
+  faBed,
+  faUsers,
+  faBath,
+  faPaw
 } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./components/shared_components/Sidebar";
 import { Home } from "./components/Home/Home";
 import Hotels from "./components/Hotels/Hotels";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import song from "./components/shared_components/song_remix.mp3";
 
-library.add(faBars, faShoppingBasket, faTimes, faStar);
+
+library.add(faBars, faShoppingBasket, faTimes, faStar, faWifi,
+  faBed, faUsers, faBath, faPaw);
 
 function App() {
   return (
     <div>
       <Router>
+        
         <Sidebar />
-        <Bubbles />
-        <div className="container">
+        <audio loop="true" autoplay="true" volume="0.3" src={song} type="audio/mpeg"></audio>
           <Switch>
             <Route exact path="/">
-              <Home/>
+               <div className="container"> 
+               <Home/>
+               </div>
             </Route>
           </Switch>
           <Switch>
@@ -31,7 +41,8 @@ function App() {
               <Hotels/>
             </Route>
           </Switch>
-        </div>
+          
+        <Bubbles />
       </Router>
       
     </div>

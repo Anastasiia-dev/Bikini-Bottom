@@ -3,6 +3,8 @@
   height: 90px;
   animation: bubble 7s infinite ease-in;
   z-index: -1;
+  opacity: 0;
+  color: white;
 }
 
 .bubbles {
@@ -10,8 +12,7 @@
   display: flex;
   align-content: center;
   justify-content: space-around;
-  position: absolute;
-  bottom: -30vh;
+  height: 100px;
 }
 
 @keyframes bubble {
@@ -20,16 +21,16 @@
     opacity: 0;
   }
 
-  50% {
-    opacity: 0.5;
+  25% {
+    opacity: 0.2;
   }
 
-  70% {
-    opacity: 0.9;
+  50% {
+    opacity: 0.3;
   }
 
   100% {
-    transform: translateY(-115vh);
+    transform: translateY(-155vh);
     opacity: 0;
   }
 }

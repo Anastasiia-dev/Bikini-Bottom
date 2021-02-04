@@ -1,11 +1,24 @@
 import React from "react";
-import Rating from "./Rating";
+import "./Hotels.css";
+import Card from "./Card"
+
+
 
 function Hotels(){
     return(
-    <>
-      <Rating />
-    </>
+      <>
+      <h1 className="hotels-title">Hotels</h1>
+
+      <div className="hotels-box">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      
+      </div>
+
+      </>
+      
   )
 }
 

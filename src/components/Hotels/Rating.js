@@ -14,6 +14,7 @@ function Rating(){
             
             {stars.map((star, i) => {
              const ratingValue = i + 1;
+             const onClickHandler = () => setRating(ratingValue);
               return(
                 <label>
                     <input 
@@ -21,21 +22,20 @@ function Rating(){
                         name="rating" 
                         key={i}
                         value={ratingValue}
-                        onClick={() => setRating(ratingValue)}
+                        onClick={onClickHandler}
                         
                     />
                     <FontAwesomeIcon
                         key={i}
                         icon="star"
-                        size="2x"
-                        color={ratingValue <= (hover || rating) ? "yellow" : "rgb(190, 190, 146)"}
+                        size="1x"
+                        color={ratingValue <= (hover || rating) ? "rgb(253, 175, 201)" : "rgb(185, 125, 144)"}
                         className="stars" 
                         onMouseEnter={() => setHover(ratingValue)}
                         onMouseLeave={() => setHover(null)}
                     />
                 </label>)
             } )}
-            <p>The rating is {rating}.</p>
           </div>
     )
 

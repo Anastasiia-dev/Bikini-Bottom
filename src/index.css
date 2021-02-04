@@ -11,7 +11,7 @@
 
 body {
   background-image: linear-gradient(to top, #17406edc, #2886b1d7, #67deb8ce),
-    url(./img/bg222.png);
+  url(./img/bg222.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
   font-family: "Spongeboytt2-Regular";
   position: relative;
-  overflow: hidden;
+  
 }
 
 .title,
@@ -49,11 +49,27 @@ body {
 .container {
   margin-top: -20px;
   height: 400px;
-  width: 100vw;
+  width: 800px;
   display: flex;
   margin-left: 17%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/*.fred img{
+  width: 200px;
+  position: fixed;
+  bottom: 4%;
+  right: 13%;
+}*/
+
+@media only screen and (min-width: 1400px){
+  .container{
+    margin-top: 100px;
+  }
+  /*.fred img{
+    width: 300px;
+  }*/
 }
