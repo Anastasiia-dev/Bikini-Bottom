@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 function Card(){
+
     return(
         <>
         <div className="hotels-container">
@@ -17,7 +18,10 @@ function Card(){
 
           <div className="hotel-info">
              <div className="hotel-links">
-              <Link to="#" className="hotel-name">Patrick's house</Link>
+              <Link 
+                  to="#"  
+                  className="hotel-name"
+              >Patrick's house</Link>
               <Rating /> 
             </div>
             <p className="hotel-adress">120 Conch Street, Bikini Bottom, Pacific Ocean</p>

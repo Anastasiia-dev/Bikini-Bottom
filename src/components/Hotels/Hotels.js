@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hotels.css";
-import Card from "./Card"
+import Card from "./Card";
 
 
 
@@ -14,7 +14,6 @@ function Hotels(){
         <Card />
         <Card />
         <Card />
-      
       </div>
 
       </>

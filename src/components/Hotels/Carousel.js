@@ -4,16 +4,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./Carousel.css";
-
+import PatrickHouse from "./patrickshouse.png";
+import PatrickRoom from "./ratricksroom.png"
 
 const images = [
       {
         id: 1,
-        src: "./components/Hotels/img/patrickshouse.png"
+        src: PatrickHouse,
       },
       {
         id: 2,
-        src: "./img/patFace.png"
+        src: PatrickRoom
       }
     ]
 
@@ -23,7 +24,6 @@ class Carousel extends Component{
   render(){
     
     const settings = {
-      dots: true,
       fade: true,
       infinite: true,
       speed: 500,
@@ -37,7 +37,7 @@ class Carousel extends Component{
       <div className="carousel">
         <Slider {...settings}>
           {images.map(image => 
-                <img key={image.id} scr={image.src} alt=""/> 
+                <img key={image.id} src={image.src} alt=""/> 
           )}
         </Slider>
       </div>
