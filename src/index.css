@@ -11,7 +11,7 @@
 
 body {
   background-image: linear-gradient(to top, #17406edc, #2886b1d7, #67deb8ce),
-    url(./img/bg222.png);
+  url(./img/bg222.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,15 +22,7 @@ body {
   box-sizing: border-box;
   font-family: "Spongeboytt2-Regular";
   position: relative;
-  overflow: hidden;
-}
-
-header {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  
 }
 
 .title,
@@ -40,7 +32,7 @@ header {
 }
 
 .title {
-  height: 150px;
+  height: 110px;
   font-size: 5.5rem;
   color: #f5f23c;
   text-shadow: #0f467ac7 9px 7px 10px;
@@ -51,14 +43,30 @@ header {
   font-size: 22px;
   font-family: "BlobSpongey";
   text-shadow: #0f467ac7 3px 7px 7px;
+  padding-left: 3px;
 }
 
 .container {
-  width: 100%;
-  margin: 20px 19%;
+  margin-top: -20px;
+  height: 400px;
+  width: 800px;
   display: flex;
+  margin-left: 17%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/*.fred img{
+  width: 200px;
+  position: fixed;
+  bottom: 4%;
+  right: 13%;
+}*/
+
+@media only screen and (min-width: 1400px){
+  .container{
+    margin-top: 100px;
+  }
 }

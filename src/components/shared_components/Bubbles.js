@@ -1,5 +1,5 @@
 import React from "react";
-import bubble from "../img/bubble.png";
+import bubble from "./img/bubble.jpg";
 import "./Bubbles.css";
 
 function Bubbles() {
@@ -10,7 +10,6 @@ function Bubbles() {
       {images.map((item, index) => (
         <img key={index} src={bubble} alt="bubble" />
       ))}
-      ;
     </div>
   );
 }

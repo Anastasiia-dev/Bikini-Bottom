@@ -1,33 +1,48 @@
 import React from "react";
-import MainTitle from "./components/MainTitle";
-import Bubbles from "./components/Bubbles";
-import Button from "./components/Button";
+import Bubbles from "./components/shared_components/Bubbles";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBars,
   faShoppingBasket,
   faTimes,
+  faStar,
+  faWifi,
+  faBed,
+  faUsers,
+  faBath,
+  faPaw
 } from "@fortawesome/free-solid-svg-icons";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/shared_components/Sidebar";
+import { Home } from "./components/Home/Home";
+import Hotels from "./components/Hotels/Hotels";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-library.add(faBars, faShoppingBasket, faTimes);
+
+library.add(faBars, faShoppingBasket, faTimes, faStar, faWifi,
+  faBed, faUsers, faBath, faPaw);
 
 function App() {
   return (
     <div>
       <Router>
+        
         <Sidebar />
-        <Switch>
-          <Route path="/" />
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+               <div className="container"> 
+               <Home/>
+               </div>
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path='/hotels'>
+              <Hotels/>
+            </Route>
+          </Switch>
+          
+        <Bubbles />
       </Router>
-
-      <div className="container">
-        <MainTitle />
-        <Button />
-      </div>
-      <Bubbles />
+      
     </div>
   );
 }

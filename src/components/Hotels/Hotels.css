@@ -1,0 +1,15 @@
+
+.hotels-title{
+    color: yellow;
+    margin-top: 1px;
+    margin-left: 10%;
+    font-size: 40px;
+    text-shadow: #0f467ac7 3px 7px 7px;
+}
+
+.hotels-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
